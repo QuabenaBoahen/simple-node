@@ -1,4 +1,4 @@
-const favorite_series = process.en.FAVORITE_SERIES;
+const favorite_series = process.env.FAVORITE_SERIES;
 
 function sleep(ms) {
   return new Promise(resolve => setTimeout(resolve, ms));
