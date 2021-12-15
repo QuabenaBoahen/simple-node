@@ -12,13 +12,13 @@ install:
 # Scripts to be run such as tests
 before_script:
   - echo "no tests"
-  - echo $FAVORITE_SERIES 
 
 script:
   - docker --version # print the version for logging
-  - docker build -t simple-node .
+  - docker build -t simple-node --build-arg FAVORITE_SERIES=$FAVORITE_SERIES .
   - docker tag simple-node quabena/simple-node:latest
 
 after_success:
+  - echo "Our favorite series is $FAVORITE_SERIES"
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
   - docker push quabena/simple-node
