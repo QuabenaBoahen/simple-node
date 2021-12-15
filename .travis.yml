@@ -12,6 +12,7 @@ install:
 # Scripts to be run such as tests
 before_script:
   - echo "no tests"
+  - echo "Quabena's favorite series of all time: $FAVORITE_SERIES" 
 
 script:
   - docker --version # print the version for logging
