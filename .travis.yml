@@ -1,0 +1,21 @@
+language: node_js
+node_js:
+  - 14
+
+services:
+  - docker  
+
+install:
+    - echo "nothing needs to be installed"
+
+script:
+    - docker --version # print docker version
+    - docker build -t simple-node
+    - docker tag simple-node quabena/simple-node:latest
+
+after_success:
+    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
+    - docker push quabena/simple-node
+
+#deploy
+".travis.yml"
