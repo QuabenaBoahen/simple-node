@@ -1,5 +1,5 @@
 # Simple Node
-[![Build Status](https://app.travis-ci.com/QuabenaBoahen/simple-node.svg?branch=master)](https://app.travis-ci.com/QuabenaBoahen/simple-node)
+[![Build Status](https://app.travis-ci.com/QuabenaBoahen/simple-node.svg?token=VZoquqRsFxWxqW9qVTTw&branch=master)](https://app.travis-ci.com/QuabenaBoahen/simple-node)
 
 ## Overview
 This is a very simple, bare-bones NodeJS project created for you to use with Docker.
