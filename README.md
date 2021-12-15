@@ -1,4 +1,6 @@
 # Simple Node
+https://app.travis-ci.com/QuabenaBoahen/simple-node.svg?branch=master
+
 ## Overview
 This is a very simple, bare-bones NodeJS project created for you to use with Docker.
 
